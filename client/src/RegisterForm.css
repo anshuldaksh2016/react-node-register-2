@@ -1,0 +1,52 @@
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-image: url(http://i.imgur.com/w16HASj.png);
+  background-size: 100% 100%;
+  background-position: top center;
+}
+
+.form-div {
+  box-shadow: 0 15px 25px #00000099;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: orchid;
+  padding: 40px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-div #email {
+  width: 80%;
+  padding: 8px 0;
+  font-size: 16px;
+  border-radius: 35px;
+  border: solid 3px white;
+  background: transparent;
+
+  padding: 10px 20px;
+}
+
+.form-div #btn {
+  background-color: #3235e4; /* Green */
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  border: 2px solid black;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.form-div .Captcha {
+  position: relative;
+  width: 70%;
+  margin: 10px 60px 0 50px;
+  overflow: hidden;
+}
+.errorMsg {
+  color: #cc0000;
+  margin-bottom: 12px;
+}
