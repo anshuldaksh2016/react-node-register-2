@@ -2,18 +2,18 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const Pool = require('pg').Pool;
+// const Pool = require('pg').Pool;
 const app = express();
 const cors = require('cors');
 
-const pool = new Pool({
-    user: 'ffhyjmxatkiapr',
-    password: '7d693dc323dd4ff98bea914a6f40740d2b642adfb77c81914dabe605e9cb6fb9',
-    host: 'ec2-54-197-254-117.compute-1.amazonaws.com',
-    port: 5432,
-    database: 'da8udtl1v4q733',
+// const pool = new Pool({
+//     user: 'ffhyjmxatkiapr',
+//     password: '7d693dc323dd4ff98bea914a6f40740d2b642adfb77c81914dabe605e9cb6fb9',
+//     host: 'ec2-54-197-254-117.compute-1.amazonaws.com',
+//     port: 5432,
+//     database: 'da8udtl1v4q733',
 
-})
+// })
 
 
 // Data Parsing 
@@ -40,8 +40,8 @@ var smtpTransport = nodemailer.createTransport({
     service: 'gmail',
     host: "smtp.gmail.com",
     auth: {
-        user: "anshuldaksh2016@gmail.com",
-        pass: "Anshul@1999"
+        user: "yourusername",
+        pass: "password"
     }
 });
 
