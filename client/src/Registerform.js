@@ -22,6 +22,8 @@ class Registerform extends React.Component {
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
+        this.verifyCallback = this.verifyCallback.bind(this);
 
     }
     // componentDidMount() {
@@ -40,7 +42,6 @@ class Registerform extends React.Component {
 
         if (validator.isEmail(JSON.stringify(data))){
 
-        
         fetch('http://localhost:5000/register', {
             method: 'POST',
             body: JSON.stringify(data),
