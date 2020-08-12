@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-The  Node.js app using Express With React and Postgres .
+The  Node.js app using Express With React and Postgres 
 
 
 ### Prerequisite
